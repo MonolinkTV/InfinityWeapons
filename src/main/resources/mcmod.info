@@ -1,0 +1,16 @@
+[
+{
+  "modid": "infinityweapons",
+  "name": "Infinity Weapons",
+  "description": "A mod of weapons over time.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Monolink,Fifstee,Mc_Destroyer"],
+  "credits": "The whole team for making our thoughts into code",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
