@@ -14,11 +14,19 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class InfinityOresWorldGen implements IWorldGenerator{
 	
-	private WorldGenerator uranium_ore;
+	private WorldGenerator oreoverworlduranium;
+	private WorldGenerator oreoverworldtitanium;
+	private WorldGenerator oreoverworldfuturium;
+	private WorldGenerator oreoverworldmercury;
+
 	
 	public InfinityOresWorldGen() 
 	{
-		uranium_ore = new WorldGenMinable(InfinityBlocks.oreoverworlduranium.getDefaultState(), 3);
+		oreoverworlduranium = new WorldGenMinable(InfinityBlocks.oreoverworlduranium.getDefaultState(), 5);
+		oreoverworldtitanium = new WorldGenMinable(InfinityBlocks.oreoverworldtitanium.getDefaultState(), 7);
+		oreoverworldfuturium = new WorldGenMinable(InfinityBlocks.oreoverworldfuturium.getDefaultState(), 9);
+		oreoverworldmercury = new WorldGenMinable(InfinityBlocks.oreoverworldmercury.getDefaultState(), 4);
+
 	}
 
 	@Override
@@ -28,7 +36,11 @@ public class InfinityOresWorldGen implements IWorldGenerator{
 		{
 			case 0:
 				
-				runGenerator(uranium_ore, world, random, chunkX, chunkZ, 5, 0, 20);
+				runGenerator(oreoverworlduranium, world, random, chunkX, chunkZ, 10, 0, 30);
+				runGenerator(oreoverworldtitanium, world, random, chunkX, chunkZ, 20, 10, 40);
+				runGenerator(oreoverworldfuturium, world, random, chunkX, chunkZ, 30, 30, 60);
+				runGenerator(oreoverworldmercury, world, random, chunkX, chunkZ, 10, 0, 10);
+
 				
 				break;
 				
